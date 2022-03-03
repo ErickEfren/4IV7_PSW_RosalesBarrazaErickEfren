@@ -29,3 +29,6 @@ nav, footer, section {
     color: black;
     background-color: rgb(236, 169, 236);
 }
+a{
+    color: darkmagenta;
+}
