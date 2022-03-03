@@ -1,0 +1,21 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+    background-color: pink;
+    color: rgb(57, 99, 141);
+}
+table,td{
+    border: 3px rgb(71, 148, 148);
+}
+footer{
+    text-align: center;
+}
+.Calcular{
+    background-color: rgb(71, 148, 148);
+    color: aliceblue;
+}
+.Restablecer{
+    background-color: rgb(71, 148, 148);
+    color: aliceblue;
+}

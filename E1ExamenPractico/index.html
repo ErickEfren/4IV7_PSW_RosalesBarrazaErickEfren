@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Practico</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/operacion.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Interes Compuesto</h1>
+        <h2>Aqui puede valuar el interes de su automovil</h2>
+    </header>
+    <main>
+        <div class="CONTENIDO">
+            <h3>Introduzca los valores de acuerdo a la petición</h3>
+            <form method="post" name="formulario" onsubmit="return operacion(this)" action="">
+                <h4>INTRODUCE EL VALOR DEL AUTO (DE 100,000.00 A 1,000,000.00)</h4>
+                <input type="text" class="Vautomovil" name="Vautomovil" id="Vautomovil" placeholder="VALOR DEL AUTOMOVIL">
+                <br><br>
+                <h4>INTRODUCE SU CUOTA INICIAL CON UN VALOR MINIMO DEL 10% DEL AUTOMOVIL</h4>
+                <input type="text" class="CInicial" name="CInicial" id="CInicial" placeholder="CUOTA INICIAL">
+                <br><br>
+                <h4>ELIGA EL PERIODO PARA LIQUIDAR SU AUTOMOVIL</h4>
+                <select name="Periodo" id="Periodo">
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="9">9</option>
+                    <option value="12">12</option>
+                    <option value="18">18</option>
+                </select>
+                <br><br>
+                <h4>ESTE ES EL INTERES FINAL DEL AUTOMOVIL </h4>
+                <input type="text" class="VFinal" name="VFinal" id="VFinal" placeholder="NO ESCRIBA NADA AQUI"> 
+                <br><br><br><br>
+                <input type="submit" class="Calcular" value="Calcular" id="Calcular">
+                <input type="reset" class="Restablecer" name="Restablecer" value="Restablecer" id="Restablecer">
+            </form>
+        </div>
+        <footer id="DATOS">
+            <h4>Nombre: Rosales Barraza Erick Efren</h4>
+            <h4>Boleta: 2021090211</h4>
+        </footer>
+    </main>
+</body>
+</html>
