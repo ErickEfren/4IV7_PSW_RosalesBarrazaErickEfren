@@ -26,9 +26,9 @@ function operacion(formulario){
         formulario.Vautomovil.focus();
         return false;
     }
-    var va = formulario.Vautomovil.value;
-    var ci = formulario.CInicial.value;
-    var p = formulario.Periodo.value;
+    var va = parseFloat(formulario.Vautomovil.value);
+    var ci = parseFloat(formulario.CInicial.value);
+    var p = parseInt(formulario.Periodo.value);
     var pi = va-ci;
     var T = pi*(1.394)**p;
     var F = document.formulario.VFinal;

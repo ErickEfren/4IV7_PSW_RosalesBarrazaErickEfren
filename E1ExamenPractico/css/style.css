@@ -14,8 +14,12 @@ footer{
 .Calcular{
     background-color: rgb(71, 148, 148);
     color: aliceblue;
+    width: 120px;
+    text-align: center;
 }
 .Restablecer{
     background-color: rgb(71, 148, 148);
     color: aliceblue;
+    width: 120px;
+    text-align: center;
 }
