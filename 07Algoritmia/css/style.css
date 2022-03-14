@@ -1,0 +1,20 @@
+*{
+    font-family: ;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: violet;
+}
+h2,h3{
+    color: black;
+}
+.container{
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
