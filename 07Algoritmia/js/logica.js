@@ -8,12 +8,12 @@ function problema3(){
     var p3_palabras = p3_input.split(',');
     //ELIMINAR EL ESPACIO QUE HAY EN CADA PALABRA
     p3_palabras = p3_palabras.map(function (palabra){
-        return pañabra.replace(/\s/g, '').toUpperCase();
+        return palabra.replace(/\s/g, '').toUpperCase();
     });
     //CALCULAR LOS CARACTERES UNICOS DE CADA PALABRA
     var p3_resultado = ''
     //ITERAR EN CADA PALABRA
-    p3_palabras-array.forEach(function (palabra,i){
+    p3_palabras.forEach(function (palabra,i){
         //SEPARAR LAS PALABRAS EN UN ARRAY PARA LEER CADA LETRA
         var letras_unicas = []
         var palabra_array = palabra.split('');
