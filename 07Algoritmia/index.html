@@ -16,7 +16,7 @@
                Las palabras pueden estar separadas por un espacio</h3>
        
             <div class="problema-content">
-               <input type="text" class="problema-input" placeholder="Ingresa las palabras separadas por un espacio: " id="p1-input">
+               <input type="text" class="problema-input" placeholder="Ingresa las palabras separadas por un espacio: " id="p1-input" onkeypress="return validarn(event)">
                <button type="button" class="problema-button" style="margin-top: 1rem;" onclick="problema1()">Invertir palabras</button>
                <pre class="problema-output" id="p1-output">Esperando datos...</pre>
            </div>
