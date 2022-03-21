@@ -2,24 +2,47 @@
 function validarn(e) {
     var teclado = (document.all) ? e.keyCode : e.which;
     if (teclado == 8 || teclado == 32) return true;    
-    var patron = /[a b c d e f g h i j k l m n ñ o p q r s t u v w x y z A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z á Á é É í Í ó Ó ú Ú ü Ü]/;
+    var patron = /[a b c d e f g h i j k l m n ñ o p q r s t u v w x y z A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z]/;
     var codigo = String.fromCharCode(teclado);
-    return patron.test(codigo)
+    return patron.test(codigo);
+}
 function reverse(palabra){
     return palabra.split("").reverse().join("");
 }
 function problema1(){
     var p1_input = document.querySelector('#p1-input').value;
     var p1_palabras = p1_input.split(' ');
-    var final = "";
+    var p1_resultado = '';
     for (var i = 0; i < p1_palabras.length; i++){
         var p1_palabrasI = reverse(p1_palabras[i]);
-        var final = "La invertida de la palabra " + p1_palabras[i] + "es: " + p1_palabrasI + "\n";
-        final = document.getElementById("p1-output").innerHTML;
+        p1_resultado += "La invertida de la palabra " + p1_palabras[i] + " es: " + p1_palabrasI + "\n";
     }
+    document.getElementById('p1-output').innerHTML = p1_resultado;
 }
 //Problema 2
-
+function problema2(){
+    var x = [parseInt(document.getElementById("p2-x1").value),
+    parseInt(document.getElementById("p2-x2").value),
+    parseInt(document.getElementById("p2-x3").value),
+    parseInt(document.getElementById("p2-x4").value),
+    parseInt(document.getElementById("p2-x5").value)]
+    var y = [parseInt(document.getElementById("p2-y1").value),
+    parseInt(document.getElementById("p2-y2").value),
+    parseInt(document.getElementById("p2-y3").value),
+    parseInt(document.getElementById("p2-y4").value),
+    parseInt(document.getElementById("p2-y5").value)]
+    for(var i = 0; i<x.length; i++){
+        if (x[i]<0){
+            x[i] *= -1
+        }
+        if (y[i]<0){
+            y[i]*=-1
+        }
+    }
+    var z = x[0] * y[0] + x[1] * y[1] + x[2] * y[2] + x[3] * y[3] + x[4] * y[4];
+    var p2_resultado = 'El valor del vector es de: ' + z
+    document.getElementById("p2-output").innerHTML = p2_resultado
+}
 //problema 3
 function problema3(){
     //definir un alfabeto
