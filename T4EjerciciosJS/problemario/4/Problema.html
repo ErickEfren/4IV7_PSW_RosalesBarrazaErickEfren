@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href=../../index.html>INDEX</a><br>
+            <a href="../1/Problema.html">Problema 1</a>
+            <a href="../2/Problema.html">Problema 2</a>
+            <a href="../3/Problema.html">Problema 3</a>
+            <a href="../5/Problema.html">Problema 5</a>
+            <a href="../6/Problema.html">Problema 6</a>
+        </nav>
+    </header><br><br><br>
+    <div class="container">
+        <table>
+            <tr>
+                <td>Introduce la calificacion de tu primer parcial</td>
+                <td><input type="text" id="1er" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td>Introduce la calificacion de tu segundo parcial</td>
+                <td><input type="text" id="2do" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td>Introduce la calificacion de tu tercer parcial</td>
+                <td><input type="text" id="3er" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td>Introduce la calificacion de tu examen final</td>
+                <td><input type="text" id="examen" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td>Introduce la calificacion de tu trabajo final</td>
+                <td><input type="text" id="trabajo" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" id="Calcular" value="Calcular" onclick="calificacion()"></td>
+            </tr>
+            <tr>
+                <td>Tu calificacion final en la materia de Algoritmos es de: </td>
+                <td><pre id="final">Esperando Datos...</pre></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" id="borrar" value="Borrar" onclick="borrar()"></td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <footer>
+            <h1>Rosales Barraza Erick Efren</h1>
+            <h2><a href="../../../index.html">Regresar a Principal</a></h2>
+        </footer>
+    </footer>
+    <script src="js/operaciones.js"></script>
+</body>
+</html>
