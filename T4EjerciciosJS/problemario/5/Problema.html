@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href=../../index.html>INDEX</a><br>
+            <a href="../1/Problema.html">Problema 1</a>
+            <a href="../2/Problema.html">Problema 2</a>
+            <a href="../3/Problema.html">Problema 3</a>
+            <a href="../4/Problema.html">Problema 4</a>
+            <a href="../6/Problema.html">Problema 6</a>
+        </nav>
+    </header><br><br><br>
+    <div class="container">
+        <table>
+            <tr>
+                <td>Introduce el número de hombres en el grupo</td>
+                <td><input type="text" id="hombres" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td>Introduce el número de mujeres en el grupo</td>
+                <td><input type="text" id="mujeres" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" value="Calcular" id="calcular" onclick="porcentaje()"></td>
+            </tr>
+            <tr>
+                <td>El procentaje de hombres es: </td>
+                <td><pre id="hombresF">Esperando Datos...</pre></td>
+            </tr>
+            <tr>
+                <td>El procentaje de mujeres es: </td>
+                <td><pre id="mujeresF">Esperando Datos...</pre></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" value="Borrar" id="borrar" onclick="borrar()"></td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <footer>
+            <h1>Rosales Barraza Erick Efren</h1>
+            <h2><a href="../../../index.html">Regresar a Principal</a></h2>
+        </footer>
+    </footer>
+    <script src="js/operaciones.js"></script>
+</body>
+</html>
