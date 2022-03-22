@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href=../../index.html>INDEX</a><br>
+            <a href="../1/Problema.html">Problema 1</a>
+            <a href="../2/Problema.html">Problema 2</a>
+            <a href="../3/Problema.html">Problema 3</a>
+            <a href="../4/Problema.html">Problema 4</a>
+            <a href="../5/Problema.html">Problema 5</a>
+        </nav>
+    </header><br><br><br>
+    <div class="container">
+        <table>
+            <tr>
+                <td>Introduce tu fecha de nacimiento en el formato DD/MM/AA&nbsp;</td>
+                <td>Día:<input type="text" id="diaN" onkeypress="return validarn(event)"></td>
+                <td>Mes:<input type="text" id="mesN" onkeypress="return validarn(event)"></td>
+                <td>Año:<input type="text" id="añoN" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td>Introduce la fecha actual en el formato DD/MM/AA&nbsp;</td>
+                <td>Día:<input type="text" id="diaA" onkeypress="return validarn(event)"></td>
+                <td>Mes:<input type="text" id="mesA" onkeypress="return validarn(event)"></td>
+                <td>Año:<input type="text" id="añoA" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="button" value="Calcular Edad" id="calcular" onclick="edad()"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Tienes</td>
+                <td><pre id="edad">___</pre></td>
+                <td>años</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="button" value="Borrar" id="borrar" onclick="borrar()"></td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <footer>
+            <h1>Rosales Barraza Erick Efren</h1>
+            <h2><a href="../../../index.html">Regresar a Principal</a></h2>
+        </footer>
+    </footer>
+    <script src="js/operaciones.js"></script>
+</body>
+</html>
