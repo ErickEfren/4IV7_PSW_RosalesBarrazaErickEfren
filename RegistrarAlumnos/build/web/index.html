@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <div class="RegisctrarAlumnos">
+                <form name="registrarA" method="post" action="guardarAlumno">
+                    <table border="2">
+                        <tr>
+                            <td>Número de Boleta: </td>
+                            <td><input type="number" name="bol" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td>Grupo: </td>
+                            <td><input type="text" name="grup" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td>Nombre(s): </td>
+                            <td><input type="text" name="nom" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td>Apellido Paterno: </td>
+                            <td><input type="text" name="appat" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td>Apellido Materno: </td>
+                            <td><input type="text" name="apmat" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td>Edad: </td>
+                            <td><input type="number" name="edad" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td>Número de Teléfono: </td>
+                            <td><input type="number" name="tel" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" value="Registrar Alumno"></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div class="ContainerConsulta">
+                        <a href="consultarA.jsp">Consultar todos los alumnos</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+
