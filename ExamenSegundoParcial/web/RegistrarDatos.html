@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div>
+            <nav>
+            <img src="D:\ExamenSegundoParcial\ExamenSegundoParcial\logo-poli-blanco.png">
+            <h1 class="main">Registro de Maquinas</h1>
+            <h2 class="main">Registrar Datos</h2>
+            <img src="D:\ExamenSegundoParcial\ExamenSegundoParcial\escudoCECyT9.png">
+            </nav>
+            <form method="post" class="RegistrarDatos" action="RegistrarDatos">
+                <label>Inserta tu boleta</label>
+                <input type="text" name="boleta">
+                <br>
+                <label>Inserta una contraseña</label>
+                <input type="text" name="contraseña">
+                <br>
+                <label>Inserta tu(s) Nombre(s)</label>
+                <input type="text" name="nombre">
+                <br>
+                <label>Apellido Paterno</label>
+                <input type="text" name="appat">
+                <br>
+                <label>Apellido Materno</label>
+                <input type="text" name="apmat">
+                <br>
+                <label>Sexo</label>
+                <select name="sexo">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <br>
+                <label>Grupo</label>
+                <select name="grupo">
+                    <option value="17">3IM7</option>
+                    <option value="18">3IM8</option>
+                    <option value="19">3IM9</option>
+                    <option value="20">3IM10</option>
+                    <option value="21">4IM7</option>
+                    <option value="22">4IM8</option>
+                    <option value="23">4IM9</option>
+                    <option value="24">4IM10</option>
+                    <option value="25">5IM7</option>
+                    <option value="26">5IM8</option>
+                    <option value="27">5IM9</option>
+                    <option value="28">5IM10</option>
+                    <option value="29">6IM7</option>
+                    <option value="30">6IM8</option>
+                    <option value="31">6IM9</option>
+                    <option value="32">6IM10</option>
+                    <option value="1">3IV7</option>
+                    <option value="2">3IV8</option>
+                    <option value="3">3IV9</option>
+                    <option value="4">3IV10</option>
+                    <option value="5">4IV7</option>
+                    <option value="6">4IV8</option>
+                    <option value="7">4IV9</option>
+                    <option value="8">4IV10</option>
+                    <option value="9">5IV7</option>
+                    <option value="10">5IV8</option>
+                    <option value="11">5IV9</option>
+                    <option value="12">5IV10</option>
+                    <option value="13">6IV7</option>
+                    <option value="14">6IV8</option>
+                    <option value="15">6IV9</option>
+                    <option value="16">6IV10</option>
+                </select>
+                <br>
+                <label>Fecha de Nacimiento</label>
+                <input type="number" name="dia">/<input type="number" name="mes">/<input type="number" name="año">
+                <br>
+                <label>Sube una imagen</label>
+                <input type="file" name="imagen">
+                <br>
+                <input type="submit" name="Registrar" value="Registrar">
+                <br>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <nav>
+            <h1 class="main">Registro de Maquinas</h1>
+            <h2 class="main">Añadir Registro de Maquina</h2>
+            </nav>
+            <form method="post" class="AñadirMaquina" action="action">
+                <label>Fecha de Reporte</label>
+                <input type="text" name="dia">/<input type="text" name="mes">/<input type="text" name="año">
+                <br>
+                <label>Hora de Reporte</label>
+                <input type="text" name="horas"><input type="text" name="minutos"><select name="horario">
+                    <option value="am">a.m</option>
+                    <option value="pm">p.m</option>
+                </select>
+                <br>
+                <label>Laboratorio</label>
+                <select name="laboratorio">
+                    <option value="LBD">Laboratorio de Base de Datos</option>
+                    <option value="LNT">Laboratorio de Nuevas Tecnologías</option>
+                    <option value="LDS">Laboratorio de Desarrollo de Software</option>
+                    <option value="A4.0">Aula 4.0</option>
+                </select>
+                <br>
+                <label>Etiqueta del equipo</label>
+                <input type="text" name="etiqueta">
+                <br>
+                <label>Asignatura</label>
+                <select name="asignatura">
+                    <option value="POO">Programación Orientada a Objetos</option>
+                    <option value="LPTI">Laboratorio de Proyectos de Tecnologias de la Informacion I</option>
+                    <option value="APTI">Administración de Proyectos de Tecnologias de la Informacion I</option>
+                    <option value="PSW">Programación y Servicios Web</option>
+                    <option value="LPTI2">Laboratorio de Proyectos de Tecnologias de la Informacion II</option>
+                    <option value="BD">Bases de Datos</option>
+                    <option value="APTI2">Administración de Proyectos de Tecnologias de la Informacion II</option>
+                    <option value="TPPC">Técnicas de Programación Personal con Calidad</option>
+                    <option value="SWA">Seguridad Web y Aplicaciones</option>
+                    <option value="LPTI3">Laboratorio de Proyectos de Tecnologias de la Informacion III</option>
+                    <option value="IIP">Introducción a la Ingeniería de Pruebas</option>
+                    <option value="ISD">Introducción a los Sistemas Distribuidos</option>
+                    <option value="ADP">Automatización de Pruebas</option>
+                    <option value="MAP">Métodos Ágiles de Programación</option>
+                    <option value="LPTI4">Laboratorio de Proyectos de Tecnologias de la Informacion IV</option>
+                    <option value="SdS">Soporte de Software</option>
+                    <option value="ISB">Ingeniería de Sofrware Básica</option>
+                    <option value="PN">Plan de Negocios</option>
+                </select>
+                <br>
+                <label>Que elemento no sirve</label>
+                <select name="equipo">
+                    <option value="cpu">CPU</option>
+                    <option value="mon">Monitor</option>
+                    <option value="mou">Mouse</option>
+                    <option value="tec">Teclado</option>
+                    <option value="con">Configuración</option>
+                </select>
+                <br>
+                <label>Docente Informado</label>
+                <input type="text" name="reporte">
+                <br>
+                <input type="submit" name="Continuar" value="Continuar">
+                <br>
+            </form>
+            <a href="Iniciado.html"><button>Regresar</button></a>
+        </div>
+    </body>
+</html>
